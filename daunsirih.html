@@ -17,6 +17,15 @@
       border-radius: 10px;
       padding: 20px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      display: flex; /* Menggunakan flexbox untuk tata letak */
+      align-items: center; /* Menyelaraskan item secara vertikal */
+    }
+    .recipe-text {
+      flex: 1; /* Membuat teks resep mengambil ruang yang tersedia */
+    }
+    .recipe-image {
+      width: 200px; /* Atur lebar gambar sesuai kebutuhan */
+      margin-left: 20px; /* Jarak antara teks dan gambar */
     }
   </style>
 </head>
@@ -25,21 +34,24 @@
     <h1 class="text-xl">Resep Minuman Jamu Daun Sirih</h1>
   </header>
   <main class="container mx-auto p-6 mt-6">
-    <h2 class="text-2xl font-bold">Bahan-bahan:</h2>
-    <ul class="list-disc pl-6">
-      <li>10 lembar daun sirih</li>
-      <li>1 gelas air</li>
-      <li>1 sendok makan madu (opsional)</li>
-    </ul>
-    <h2 class="text-2xl font-bold mt-4">Cara Membuat:</h2>
-    <ol class="list-decimal pl-6">
-      <li>Cuci bersih daun sirih dan potong kecil-kecil.</li>
-      <li>Rebus air dalam panci hingga mendidih.</li>
-      <li>Masukkan daun sirih ke dalam air mendidih.</li>
-      <li>Biarkan mendidih selama 10 menit.</li>
-      <li>Angkat dan saring airnya ke dalam gelas.</li>
-      <li>Tambahkan madu jika diinginkan, aduk rata, dan sajikan hangat.</li>
-    </ol>
+    <div class="recipe-text">
+      <h2 class="text-2xl font-bold">Bahan-bahan:</h2>
+      <ul class="list-disc pl-6">
+        <li>10 lembar daun sirih</li>
+        <li>1 gelas air</li>
+        <li>1 sendok makan madu (opsional)</li>
+      </ul>
+      <h2 class="text-2xl font-bold mt-4">Cara Membuat:</h2>
+      <ol class="list-decimal pl-6">
+        <li>Cuci bersih daun sirih dan potong kecil-kecil.</li>
+        <li>Rebus air dalam panci hingga mendidih.</li>
+        <li>Masukkan daun sirih ke dalam air mendidih.</li>
+        <li>Biarkan mendidih selama 10 menit.</li>
+        <li>Angkat dan saring airnya ke dalam gelas.</li>
+        <li>Tambahkan madu jika diinginkan, aduk rata, dan sajikan hangat.</li>
+      </ol>
+    </div>
+    <img src="sirihs.png" alt="Gambar Jamu Daun Sirih" class="recipe-image" /> <!-- Ganti dengan URL gambar yang diinginkan -->
   </main>
   <footer class="bg-[#593c2a] text-white text-center p-4 mt-6">
     <a href="index.html" class="text-white">Kembali ke Menu</a>
